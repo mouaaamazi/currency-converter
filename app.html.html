@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+        }
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: rgb(12, 44, 85);
+            font-family: "Merriweather", serif;
+        }
+        #container{
+            background-color: rgb(237, 237, 206);
+            padding: 20px;
+            color: rgb(12, 44, 85);;
+        }
+        input,select,button{
+            width: 100%;
+            outline: none;
+            border: none;
+            border-radius: 20px;
+            
+            
+            
+            
+        }
+
+       #amount{
+        height: 50px;
+        margin: 10px;
+        text-align: center;
+        background-color: rgb(240, 240, 219);
+    
+       }
+       .getexchange{
+         font-family: "Merriweather", serif;;
+         height: 30px;
+         color: rgb(237, 237, 206);
+         background-color: rgb(12, 44, 85);
+       }
+        .dropdown{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 10px;
+        }
+        img{
+            max-width: 2rem;
+        }
+        .dropdiv{
+            display: flex;
+            align-items: center;
+        }
+        select{
+            background: none;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>CURRENCY CONVERTOR</h1>
+        <p class="statement">
+            Enter your amount:
+        </p>
+        <input type="number" id="amount">
+        <form action="">
+            <div class="dropdown">
+                <div id="fromdiv" class="dropdiv">
+                    <h6>FROM</h6>
+                    <img src="https://flagsapi.com/US/flat/64.png" alt="">
+                    <select name="" id="from">
+                        <option value="USD" selected>USD</option>
+
+                    </select>
+                </div>
+                <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                <div id="todiv" class="dropdiv">
+                    <h6>TO</h6>
+                    <img src="https://flagsapi.com/PK/flat/64.png" alt="">
+
+                    <select name="" id="to">
+                        <option value="PKR" selected>PKR</option>
+
+                    </select>
+                </div>
+            </div>
+            <p class="result"></p>
+            <button class="getexchange">GET EXCHANGE</butoon>
+        </form>
+    </div>
+    <script src="codes.js">
+       
+    
+    </script>
+    <script src="app.js"></script>
+    
+</body>
+</html>
